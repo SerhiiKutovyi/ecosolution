@@ -1,3 +1,5 @@
+import styled from 'styled-components';
+
 import { About } from './About/About';
 import { Cases } from './Cases/Cases';
 import { ContactUs } from './ContactUs/ContactUs';
@@ -8,7 +10,7 @@ import { Main } from './Main/Main';
 
 const App = () => {
   return (
-    <>
+    <Container>
       <Header />
       <Main />
       <About />
@@ -16,8 +18,19 @@ const App = () => {
       <Cases />
       <ContactUs />
       <Footer />
-    </>
+    </Container>
   );
 };
 
-export { App };
+export default App;
+
+const Container = styled.div`
+  width: 360px;
+  
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color:yellow;
+` 
+  
+  

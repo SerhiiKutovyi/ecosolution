@@ -1,4 +1,5 @@
-export const Header = ()=> {
-    return <h2>ecosolution</h2>;
-};
+import { Container } from './Header.styled';
 
+export const Header = () => {
+  return <Container>ecosolution</Container>;
+};
