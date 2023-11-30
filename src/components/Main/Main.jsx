@@ -1,3 +1,5 @@
-export const Main = () => {
-  return <h2>RENEWABLE ENERGY For any task</h2>;
+const Main = () => {
+  return <h1>RENEWABLE ENERGY FOR ANY TASK</h1>;
 };
+
+export default Main;

@@ -1,5 +1,14 @@
-import { Container } from './Header.styled';
+import BurgerMenu from '../../components/BurgerMenu/BurgerMenu';
 
-export const Header = () => {
-  return <Container>ecosolution</Container>;
+import { Container, Image } from './Header.styled';
+import logo from '../../images/logo.png';
+
+const Header = () => {
+  return (
+    <Container>
+      <Image src={logo} alt="Logo"></Image>
+      <BurgerMenu />
+    </Container>
+  );
 };
+export default Header;
