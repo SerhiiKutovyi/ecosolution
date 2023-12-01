@@ -1,12 +1,12 @@
 import BurgerMenu from '../../components/BurgerMenu/BurgerMenu';
 
-import { Container, Image } from './Header.styled';
+import { Container } from './Header.styled';
 import logo from '../../images/logo.png';
 
 const Header = () => {
   return (
     <Container>
-     <Image src={logo} alt="Logo"></Image> 
+     <img src={logo} alt="Logo"></img> 
       <BurgerMenu />
     </Container>
   );

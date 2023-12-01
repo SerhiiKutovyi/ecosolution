@@ -5,11 +5,11 @@ export const Container = styled.div`
 
   div {
     border-bottom: 1px solid rgba(151, 210, 139, 1);
-     margin-bottom: 24px;
+    margin-bottom: 24px;
   }
 
   h1 {
-   
+    margin-bottom: 24px;
 
     font-family: var(--title-font);
     font-style: normal;
@@ -24,6 +24,27 @@ export const Container = styled.div`
     font-style: normal;
     font-size: 16px;
     line-height: calc(19.2 / 16);
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    width: 289px;
+   
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 36px;
+    
+
+    font-family: var(--main-font);
+    font-style: normal;
+    font-size: 14px;
+    line-height: calc(19 / 14);
+  
   }
 `;
 
