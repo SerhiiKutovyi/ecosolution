@@ -1,32 +1,28 @@
 :root {
-    /* fonts */
-    --main-font: 'Fira Sans';
-    --secondary-font: 'Oswald';
+  /* fonts */
+  --title-font: 'Oswald';
+  --main-font: 'Fira Sans';
 
-    /* text */
-    --title-text-main-color: #173D33;
-  
-   
-   
+  /* text */
+  --title-text-main-color: #173d33;
 
-    /* background */
-    --burger-background-color: #DCEFD8;
-    --layout-background-color: #F3F5FA;
-    --burger-hover-background-color: #97D28B;
-  
+  /* background */
+  --burger-background-color: #dcefd8;
+  --layout-background-color: #f3f5fa;
+  --burger-hover-background-color: #97d28b;
 
-    /* form */
-    /* --input-bcg-color: #f7f7f7;
+  /* form */
+  /* --input-bcg-color: #f7f7f7;
     --border-input: #ffffff2f;
     --modal-background-color: #ffffff;
     --modal-input-text-color: #616161;
     --modal-input-lable-color: #343434c5;
     --modal-border-color: 'none'; */
 
-    /* animation */
-    --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* animation */
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    /* background button */
-    /* --background-button-month: #cae8ff;
+  /* background button */
+  /* --background-button-month: #cae8ff;
     --background-button-day: #e3f3ff; */
 }

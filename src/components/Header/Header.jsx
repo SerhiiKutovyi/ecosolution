@@ -6,7 +6,7 @@ import logo from '../../images/logo.png';
 const Header = () => {
   return (
     <Container>
-      <Image src={logo} alt="Logo"></Image>
+     <Image src={logo} alt="Logo"></Image> 
       <BurgerMenu />
     </Container>
   );
