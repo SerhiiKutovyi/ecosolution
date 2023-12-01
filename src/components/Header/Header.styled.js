@@ -10,11 +10,4 @@ export const Container = styled.div`
   margin-bottom: 110px;
 
   height: 112px;
-
-  
-`;
-
-export const Image = styled.img`
-  /* width: 269px;
-  height: 40px; */
 `;
