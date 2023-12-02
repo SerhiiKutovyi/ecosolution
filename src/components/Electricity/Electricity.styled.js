@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   position: relative;
-  
+
   margin-bottom: 36px;
 
   h2 {
@@ -42,11 +42,14 @@ export const Container = styled.div`
 
 export const Line = styled.div`
   position: absolute;
+
+  height: 48px;
+  width: 1px;
+
   top: 80px;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  height: 48px;
-  width: 1px;
+
   background-color: var(--burger-hover-background-color);
 `;
