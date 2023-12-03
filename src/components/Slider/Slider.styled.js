@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Swiper } from 'swiper/react';
 
-export const Container = styled.div`
+export const Container = styled(Swiper)`
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;

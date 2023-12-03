@@ -1,4 +1,4 @@
-// import { Container, Prev, SlidPanel, Next } from './Slider.styled';
+import { Container, Prev, SlidPanel, Next } from './Slider.styled';
 
 // import bg1 from '../../images/lviv.jpg';
 // import bg2 from '../../images/zitomiyr.jpg';
@@ -35,10 +35,10 @@
 // };
 // export default Slider;
 
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation } from 'swiper/modules';
+import { SwiperSlide } from 'swiper/react';
 
-import 'swiper/css';
+import 'swiper/css/bundle';
 
 import bg1 from '../../images/lviv.jpg';
 import bg2 from '../../images/zitomiyr.jpg';
@@ -46,12 +46,26 @@ import bg3 from '../../images/rivne.jpg';
 import bg4 from '../../images/kherson.jpg';
 import bg5 from '../../images/zaporizhia.jpg';
 
+const CustomPrevButton = () => {
+  console.log('clic');
+};
+
+const CustomNextButton = () => {
+  console.log('clic');
+};
+
 const Slider = () => {
   return (
-    <Swiper
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
+    <Container
+      modules={[Navigation, Pagination]}
       spaceBetween={50}
       slidesPerView={1}
+      pagination={{ type: 'fraction' }}
+      navigation={{
+        prevEl: 'CustomPrevButton',
+        nextEl: 'CustomNextButton',
+      }}
+      loop={true}
       onSlideChange={() => console.log('slide change')}
       onSwiper={swiper => console.log(swiper)}
     >
@@ -70,8 +84,9 @@ const Slider = () => {
       <SwiperSlide>
         <img src={bg5} alt="Zaporizhia" />
       </SwiperSlide>
-      ...
-    </Swiper>
+      <Prev onClick={CustomPrevButton}></Prev>
+      <Next onClick={CustomNextButton}></Next>
+    </Container>
   );
 };
 
