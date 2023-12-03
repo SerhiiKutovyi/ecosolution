@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+
+a{
+  display: flex;
+}
   
 `;
 export const ContactUsTitle = styled.h2`
