@@ -1,4 +1,13 @@
- const ContactUs = () => {
-  return <h2>Contact us</h2>;
+import { Container, ContactUsTitle } from './ContactUs.styled';
+
+const ContactUs = () => {
+  return (
+    <>
+       <ContactUsTitle>CONTACT US</ContactUsTitle>
+      <Container>
+       
+      </Container>
+    </>
+  );
 };
 export default ContactUs;

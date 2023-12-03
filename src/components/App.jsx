@@ -7,6 +7,7 @@ import Electricity from './Electricity/Electricity';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import Main from './Main/Main';
+import Faq from './Faq/Faq';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <About />
       <Electricity />
       <Cases />
+      <Faq/>
       <ContactUs />
       <Footer />
     </Container>

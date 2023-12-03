@@ -1,4 +1,4 @@
-import { Container, Prev, SlidPanel, Next } from './Slider.styled';
+import { Container } from './Slider.styled';
 
 // import bg1 from '../../images/lviv.jpg';
 // import bg2 from '../../images/zitomiyr.jpg';
@@ -46,13 +46,13 @@ import bg3 from '../../images/rivne.jpg';
 import bg4 from '../../images/kherson.jpg';
 import bg5 from '../../images/zaporizhia.jpg';
 
-const CustomPrevButton = () => {
-  console.log('clic');
-};
+// const CustomPrevButton = () => {
+//   console.log('clic');
+// };
 
-const CustomNextButton = () => {
-  console.log('clic');
-};
+// const CustomNextButton = () => {
+//   console.log('clic');
+// };
 
 const Slider = () => {
   return (
@@ -69,6 +69,8 @@ const Slider = () => {
       onSlideChange={() => console.log('slide change')}
       onSwiper={swiper => console.log(swiper)}
     >
+      {/* <Prev onClick={CustomPrevButton}></Prev>
+      <Next onClick={CustomNextButton}></Next> */}
       <SwiperSlide>
         <img src={bg1} alt="Lviv" />
       </SwiperSlide>
@@ -84,8 +86,6 @@ const Slider = () => {
       <SwiperSlide>
         <img src={bg5} alt="Zaporizhia" />
       </SwiperSlide>
-      <Prev onClick={CustomPrevButton}></Prev>
-      <Next onClick={CustomNextButton}></Next>
     </Container>
   );
 };

@@ -2,9 +2,10 @@ import styled from 'styled-components';
 import { Swiper } from 'swiper/react';
 
 export const Container = styled(Swiper)`
-  display: flex;
+  /* display: flex;
   flex-direction: row-reverse;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+  margin-bottom: 26px;
 `;
 
 export const Prev = styled.div`
