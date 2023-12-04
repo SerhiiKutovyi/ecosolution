@@ -46,10 +46,7 @@ const BurgerMenu = () => {
               <li>
                 <p>Contact Us</p>
               </li>
-              <li>
-                <a href=""></a>
-                <a href=""></a>
-              </li>
+              <li></li>
             </ul>
           </ModalContent>
         </Modal>

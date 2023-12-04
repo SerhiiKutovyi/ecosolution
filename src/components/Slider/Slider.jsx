@@ -23,8 +23,6 @@ const Slider = () => {
         nextEl: 'CustomNextButton',
       }}
       loop={true}
-      // onSlideChange={() => console.log('slide change')}
-      // onSwiper={swiper => console.log(swiper)}
     >
       <SwiperSlide>
         <img src={bg1} alt="Lviv" />

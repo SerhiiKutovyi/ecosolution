@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5db567ee.css",
+    "main.js": "/static/js/main.246d1cad.js",
+    "static/media/zitomiyr.jpg": "/static/media/zitomiyr.7df194d06ecdbe1e760a.jpg",
+    "static/media/rivne.jpg": "/static/media/rivne.58b587e725032bf77957.jpg",
+    "static/media/zaporizhia.jpg": "/static/media/zaporizhia.b2e6d589dcd3c09b18ce.jpg",
+    "static/media/lviv.jpg": "/static/media/lviv.21bdeea126c3a3af0886.jpg",
+    "static/media/kherson.jpg": "/static/media/kherson.4f13d54358ff75f5f37d.jpg",
+    "static/media/mask.jpg": "/static/media/mask.e99fb9049e4a25fcb983.jpg",
+    "static/media/innovation.svg": "/static/media/innovation.09c792685007a705b0bb20e017ad50b7.svg",
+    "static/media/quality.svg": "/static/media/quality.91f97cf95a567b1f73be2e9d63a041dd.svg",
+    "static/media/responsibility.svg": "/static/media/responsibility.1c83116edc615bb57d0bac9f576d4e14.svg",
+    "static/media/call.svg": "/static/media/call.39f3d3e3e6f16cff7d0f9af2f1b0a852.svg",
+    "static/media/openness.svg": "/static/media/openness.e09b2e717d0e2b3e1450b28fdf496960.svg",
+    "static/media/map.svg": "/static/media/map.c3d960ba5958289a1188e31674a2a827.svg",
+    "static/media/instagram.svg": "/static/media/instagram.6e44fb60b2bc0188a75401317260801f.svg",
+    "static/media/facebook.svg": "/static/media/facebook.7d3482cf4dc99aae8274300de788adcd.svg",
+    "index.html": "/index.html",
+    "static/media/sms.svg": "/static/media/sms.f6ddabde98bcc660cede888e2b532717.svg",
+    "static/media/plus.svg": "/static/media/plus.18018ecb7520511c1ef7ed7229d22d4c.svg",
+    "static/media/minus.svg": "/static/media/minus.06823d08b7149db9f2adc6371ef81ae6.svg",
+    "main.5db567ee.css.map": "/static/css/main.5db567ee.css.map",
+    "main.246d1cad.js.map": "/static/js/main.246d1cad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5db567ee.css",
+    "static/js/main.246d1cad.js"
+  ]
+}

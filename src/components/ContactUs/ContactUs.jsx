@@ -22,7 +22,7 @@ const ContactUs = () => {
       <Container>
         <ul>
           <li>
-            <p>Phone:</p> {/**  TUDU тег Tel-<а>  не добовляется стиль*/}
+            <p>Phone:</p> 
             <Tel href="tel:38 (098) 12 34 567">
               <img src={call} alt="Call icon" />
               38 (098) 12 34 567
