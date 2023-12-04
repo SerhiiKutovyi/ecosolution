@@ -56,7 +56,7 @@ const Faq = () => {
         </li>
       </Container>
       <Question>Didn't find the answer to your question?</Question>
-      <ContactUsBtn />
+      <ContactUsBtn target="formik" />
     </>
   );
 };

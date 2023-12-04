@@ -46,7 +46,7 @@ const UserForm = () => {
           isSubmitting,
           /* and other goodies */
         }) => (
-          <form onSubmit={handleSubmit}>
+          <form id="formik" onSubmit={handleSubmit}>
             <p>*Full name:</p>
             <Input
               type="name"

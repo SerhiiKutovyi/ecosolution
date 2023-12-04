@@ -1,12 +1,15 @@
 import { Btn } from '../ContactUs/ContactUsBtn.styled';
+import { Link } from 'react-scroll';
 
-const ContactUsBtn = () => {
+const ContactUsBtn = ({ target }) => {
   return (
     <>
-      <Btn>
-        <span>Contact Us</span>
-        <div></div>
-      </Btn>
+      <Link to={target} smooth={true} duration={1000}>
+        <Btn>
+          <span>Contact Us</span>
+          <div></div>
+        </Btn>
+      </Link>
     </>
   );
 };

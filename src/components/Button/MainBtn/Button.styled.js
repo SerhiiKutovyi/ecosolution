@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+
 export const Btn = styled.button`
   display: flex;
   justify-content: center;
@@ -16,7 +17,6 @@ export const Btn = styled.button`
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 24px;
-  
 
   cursor: pointer;
   background-color: var(--layout-background-color);
