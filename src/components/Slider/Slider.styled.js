@@ -35,12 +35,4 @@ export const SlidPanel = styled.div`
 
   overflow-x: scroll;
   scroll-snap-type: mandatory;
-
-  img {
-    /* width: 320px;
-    height: 318px;
-
-    scroll-snap-align: start;
-    min-width: 100%; */
-  }
 `;
