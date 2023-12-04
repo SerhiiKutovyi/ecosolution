@@ -1,19 +1,21 @@
 import { Formik } from 'formik';
 import { object, string, number } from 'yup';
 
-import { Container, Input } from './UserForm.styled';
+import { Container, Input, InputMessage } from './UserForm.styled';
+import Send from '../Button/Send/Send';
 
 const validationFormikSchema = object({
-  name: string().min(2).max(16).required(),
+  name: string().min(2).max(20).required(),
   email: string().email(),
   phone: number().required(),
+  message: string(),
 });
 
 const UserForm = () => {
   return (
     <Container>
       <Formik
-        initialValues={{ name: '', email: '', phone: '' }}
+        initialValues={{ name: '', email: '', phone: '', message: '' }}
         validate={values => {
           const errors = {};
           if (!values.email) {
@@ -76,9 +78,18 @@ const UserForm = () => {
             />
             {errors.phone && touched.phone && errors.phone}
 
-            <button type="submit" disabled={isSubmitting}>
-              Submit
-            </button>
+            <p>Message:</p>
+            <InputMessage
+              type="text"
+              name="message"
+              onChange={handleChange}
+              onBlur={handleBlur}
+              value={values.message}
+              placeholder="My message...."
+            />
+            {errors.message && touched.message && errors.message}
+
+            <Send type="submit" disabled={isSubmitting} />
           </form>
         )}
       </Formik>
