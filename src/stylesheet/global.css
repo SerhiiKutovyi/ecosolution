@@ -88,7 +88,6 @@ body {
   color: var(--title-text-main-color);
   font-family: var(--main-font);
   font-weight: 400;
-  background-color: rgb(47, 46, 46);
 }
 
 body.lock-scroll {
