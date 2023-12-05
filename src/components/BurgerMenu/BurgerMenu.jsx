@@ -1,5 +1,15 @@
 import { useState } from 'react';
-import { Wrapper, Modal, ModalContent } from './BurgerMenu.styled';
+
+import icon from '../../images/symbol-defs.svg';
+
+import {
+  Wrapper,
+  Modal,
+  ModalContent,
+  SvgInstagram,
+  SvgFacebook,
+  IconBox,
+} from './BurgerMenu.styled';
 
 const BurgerMenu = () => {
   const [modal, setModal] = useState(false);
@@ -46,7 +56,18 @@ const BurgerMenu = () => {
               <li>
                 <p>Contact Us</p>
               </li>
-              <li></li>
+              <IconBox>
+                <a href="https://uk-ua.facebook.com/">
+                  <SvgFacebook>
+                    <use href={icon + '#icon-facebook'}></use>
+                  </SvgFacebook>
+                </a>
+                <a href="https://www.instagram.com/">
+                  <SvgInstagram>
+                    <use href={icon + '#icon-instagram'}></use>
+                  </SvgInstagram>
+                </a>
+              </IconBox>
             </ul>
           </ModalContent>
         </Modal>

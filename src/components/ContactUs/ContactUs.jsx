@@ -18,7 +18,7 @@ import {
 const ContactUs = () => {
   return (
     <>
-      <ContactUsTitle>CONTACT US</ContactUsTitle>
+      <ContactUsTitle id='contactUs'>CONTACT US</ContactUsTitle>
       <Container>
         <ul>
           <li>

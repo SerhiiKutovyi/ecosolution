@@ -53,8 +53,21 @@ export const ModalContent = styled.div`
     border: unset;
 
     margin-bottom: 8px;
-    background: #173d33 75%;
+
+    font-family: var(--main-font);
+    font-style: normal;
+    font-size: 24px;
+    line-height: calc(28.8 / 24);
     color: var(--white-color);
+
+    background: var(--modal-background);
+
+    &:hover,
+    :focus {
+      background-color: var(--title-text-main-color);
+      transition: var(--animation);
+      color: var(--burger-hover-background-color);
+    }
   }
 
   ul {
@@ -62,8 +75,38 @@ export const ModalContent = styled.div`
     padding-top: 24px;
   }
 
-  p{
-    color: var(--white-color);
+  p {
     margin-bottom: 8px;
+
+    font-family: var(--main-font);
+    font-style: normal;
+    font-size: 24px;
+    line-height: calc(28.8 / 24);
+
+    color: var(--white-color);
   }
+`;
+
+export const IconBox = styled.li`
+  margin-top: 395px;
+
+  display: flex;
+  gap: 8px;
+`;
+
+export const SvgFacebook = styled.svg`
+  cursor: pointer;
+
+  width: 24px;
+  height: 24px;
+  fill: white;
+`;
+
+export const SvgInstagram = styled.svg`
+  cursor: pointer;
+
+  width: 24px;
+  height: 24px;
+  fill: var(--modal-background);
+  stroke: white;
 `;
