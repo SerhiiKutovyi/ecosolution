@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const Btn = styled.button`
   display: flex;
   justify-content: center;
@@ -38,6 +37,10 @@ export const Btn = styled.button`
 
   span {
     margin-right: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
   }
 `;
 

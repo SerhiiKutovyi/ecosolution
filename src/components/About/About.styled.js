@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   margin-bottom: 36px;
-  
+
   h2 {
     margin-bottom: 24px;
 
@@ -10,6 +10,16 @@ export const Container = styled.div`
     font-style: normal;
     font-size: 28px;
     line-height: calc(28 / 28);
+
+    @media screen and (min-width: 768px) {
+      width: 100%;
+      height: 72px;
+
+      font-family: var(--title-font);
+      font-style: normal;
+      font-size: 36px;
+      line-height: calc(36 / 36);
+    }
   }
 
   ul {
@@ -32,22 +42,33 @@ export const Container = styled.div`
     background-color: var(--about-background-color);
   }
 
-  div {
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-
-    padding-bottom: 33px;
-    margin-bottom: 12px;
-
-    border-bottom: 1px solid #97d28b;
-  }
-
   p {
     font-family: var(--main-font);
     font-style: normal;
     font-size: 14px;
     line-height: calc(16.8 / 14);
+  }
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+`;
+
+export const GreenLine = styled.div`
+ display: none;
+
+  margin-left: 82px;
+  margin-right: 11px;
+  height: 110px;
+  border-left: 1px solid var(--burger-hover-background-color);
+
+  @media screen and (min-width: 768px) {
+    display: block;
   }
 `;
 
@@ -58,7 +79,23 @@ export const AboutText = styled.p`
   font-style: normal;
   font-size: 16px;
   line-height: calc(19.2 / 16);
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
 `;
+
+export const AboutGrid = styled.div`
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+
+  padding-bottom: 33px;
+  margin-bottom: 12px;
+
+  border-bottom: 1px solid var(--burger-hover-background-color);
+`;
+export const AboutImg = styled.li``;
 
 export const Values = styled.p`
   font-family: var(--title-font);
