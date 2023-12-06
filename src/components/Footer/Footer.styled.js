@@ -7,19 +7,19 @@ export const Container = styled.div`
   border-top: 1px solid var(--burger-hover-background-color);
 
   a {
-    font-family: var(--title-font);
+    font-family: var(--main-font);
     font-style: normal;
-    font-size: 16px;
-    line-height: calc(19.2 / 16);
+    font-size: 14px;
+    line-height: calc(19.2 / 14);
   }
 
   p {
     text-align: center;
 
-    font-family: var(--title-font);
+    font-family: var(--main-font);
     font-style: normal;
-    font-size: 16px;
-    line-height: calc(19.2 / 16);
+    font-size: 14px;
+    line-height: calc(19 / 14);
   }
 `;
 

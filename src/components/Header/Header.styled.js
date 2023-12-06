@@ -10,4 +10,8 @@ export const Container = styled.div`
   margin-bottom: 110px;
 
   height: 112px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 164px;
+  }
 `;

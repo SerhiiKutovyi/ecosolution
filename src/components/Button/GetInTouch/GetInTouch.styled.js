@@ -65,6 +65,6 @@ export const Btn = styled.button`
   }
 
   @media (max-width: 768px) {
-    display: none; /* Показываем кнопку при ширине экрана макс или равной 768px */
+    display: none;
   }
 `;

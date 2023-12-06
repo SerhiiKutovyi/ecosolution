@@ -32,48 +32,56 @@ const About = () => {
       </Wrapper>
 
       <ul>
-        <AboutCards>
-          <AboutGrid>
-            <img src={openness} alt="Openness"></img>
-            <Values>OPENNESS</Values>
-          </AboutGrid>
-          <p>to the world, people, new ideas and projects</p>
-        </AboutCards>
-        <AboutCards>
-          <AboutGrid>
-            <img src={responsibility} alt="Responsibility"></img>
-            <Values>RESPONSIBILITY</Values>
-          </AboutGrid>
-          <p>
-            we are aware that the results of our work have an impact on our
-            lives and the lives of future generations
-          </p>
-        </AboutCards>
-        <AboutImg>
-          <img src={group} alt="Group"></img>
-        </AboutImg>
-        <AboutImg>
-          <img src={windFarm} alt="Wind-farm"></img>
-        </AboutImg>
-        <AboutCards>
-          <AboutGrid>
-            <img src={innovation} alt="Innovation"></img>
-            <Values>INNOVATION</Values>
-          </AboutGrid>
-          <p>
-            we use the latest technology to implement non-standard solutions
-          </p>
-        </AboutCards>
-        <AboutCards>
-          <AboutGrid>
-            <img src={quality} alt="Quality"></img>
-            <Values>QUALITY</Values>
-          </AboutGrid>
-          <p>
-            we do not strive to be the first among others, but we want to be the
-            best in our business
-          </p>
-        </AboutCards>
+        <li>
+          <AboutCards>
+            <AboutGrid>
+              <img src={openness} alt="Openness"></img>
+              <Values>OPENNESS</Values>
+            </AboutGrid>
+            <p>to the world, people, new ideas and projects</p>
+          </AboutCards>
+
+          <AboutCards>
+            <AboutGrid>
+              <img src={responsibility} alt="Responsibility"></img>
+              <Values>RESPONSIBILITY</Values>
+            </AboutGrid>
+            <p>
+              we are aware that the results of our work have an impact on our
+              lives and the lives of future generations
+            </p>
+          </AboutCards>
+
+          <AboutImg>
+            <img src={group} alt="Group"></img>
+          </AboutImg>
+        </li>
+        <li>
+          <AboutImg>
+            <img src={windFarm} alt="Wind-farm"></img>
+          </AboutImg>
+
+          <AboutCards>
+            <AboutGrid>
+              <img src={innovation} alt="Innovation"></img>
+              <Values>INNOVATION</Values>
+            </AboutGrid>
+            <p>
+              we use the latest technology to implement non-standard solutions
+            </p>
+          </AboutCards>
+
+          <AboutCards>
+            <AboutGrid>
+              <img src={quality} alt="Quality"></img>
+              <Values>QUALITY</Values>
+            </AboutGrid>
+            <p>
+              we do not strive to be the first among others, but we want to be
+              the best in our business
+            </p>
+          </AboutCards>
+        </li>
       </ul>
     </Container>
   );

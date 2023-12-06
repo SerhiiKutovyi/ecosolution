@@ -1,7 +1,7 @@
 import MainBtn from '../Button/MainBtn/Button';
 
 import { Container, Img, Wrapper, Eco, Deve } from './Main.styled';
-import mask from '../../images/mask.jpg';
+import mask from '../../images/wind-turbine-clean-energy.jpg';
 
 const Main = () => {
   return (

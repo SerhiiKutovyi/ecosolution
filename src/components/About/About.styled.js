@@ -2,6 +2,9 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   margin-bottom: 36px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 100px;
+  }
 
   h2 {
     margin-bottom: 24px;
@@ -25,13 +28,29 @@ export const Container = styled.div`
   ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr;
     grid-row-gap: 24px;
     grid-column-gap: 24px;
 
     @media screen and (min-width: 768px) {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr;
       grid-template-rows: repeat(2, 1fr);
+    }
+  }
+
+  li {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+
+    @media screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-row-gap: 24px;
+      grid-column-gap: 24px;
     }
   }
 
@@ -43,7 +62,7 @@ export const Container = styled.div`
   }
 `;
 
-export const AboutCards = styled.li`
+export const AboutCards = styled.div`
   width: 148px;
   height: 197px;
 
@@ -55,27 +74,26 @@ export const AboutCards = styled.li`
   background-color: var(--about-background-color);
 
   @media screen and (min-width: 768px) {
-    width: 148px;
+    width: 159px;
+  
   }
 `;
-
-export const AboutImg = styled.li`
-  display: none;
-
-  @media screen and (min-width: 768px) {
-    display: block;
-
-    width: 342px;
-    height: 100%;
-  }
-`;
-
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
+  }
+`;
+
+export const AboutImg = styled.div`
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+
+    min-width: 342px;
   }
 `;
 
