@@ -13,6 +13,7 @@ import {
   GreenLine,
   AboutGrid,
   AboutImg,
+  AboutCards,
 } from './About.styled';
 
 const About = () => {
@@ -31,14 +32,14 @@ const About = () => {
       </Wrapper>
 
       <ul>
-        <li>
+        <AboutCards>
           <AboutGrid>
             <img src={openness} alt="Openness"></img>
             <Values>OPENNESS</Values>
           </AboutGrid>
           <p>to the world, people, new ideas and projects</p>
-        </li>
-        <li>
+        </AboutCards>
+        <AboutCards>
           <AboutGrid>
             <img src={responsibility} alt="Responsibility"></img>
             <Values>RESPONSIBILITY</Values>
@@ -47,11 +48,14 @@ const About = () => {
             we are aware that the results of our work have an impact on our
             lives and the lives of future generations
           </p>
-        </li>
+        </AboutCards>
         <AboutImg>
           <img src={group} alt="Group"></img>
         </AboutImg>
-        <li>
+        <AboutImg>
+          <img src={windFarm} alt="Wind-farm"></img>
+        </AboutImg>
+        <AboutCards>
           <AboutGrid>
             <img src={innovation} alt="Innovation"></img>
             <Values>INNOVATION</Values>
@@ -59,8 +63,8 @@ const About = () => {
           <p>
             we use the latest technology to implement non-standard solutions
           </p>
-        </li>
-        <li>
+        </AboutCards>
+        <AboutCards>
           <AboutGrid>
             <img src={quality} alt="Quality"></img>
             <Values>QUALITY</Values>
@@ -69,10 +73,7 @@ const About = () => {
             we do not strive to be the first among others, but we want to be the
             best in our business
           </p>
-        </li>
-        <AboutImg>
-          <img src={windFarm} alt="Wind-farm"></img>
-        </AboutImg>
+        </AboutCards>
       </ul>
     </Container>
   );

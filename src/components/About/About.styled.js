@@ -28,18 +28,11 @@ export const Container = styled.div`
     grid-template-rows: repeat(2, 1fr);
     grid-row-gap: 24px;
     grid-column-gap: 24px;
-  }
 
-  li {
-    width: 148px;
-    height: 197px;
-
-    padding-top: 13px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-bottom: 12px;
-
-    background-color: var(--about-background-color);
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+    }
   }
 
   p {
@@ -47,6 +40,33 @@ export const Container = styled.div`
     font-style: normal;
     font-size: 14px;
     line-height: calc(16.8 / 14);
+  }
+`;
+
+export const AboutCards = styled.li`
+  width: 148px;
+  height: 197px;
+
+  padding-top: 13px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
+
+  background-color: var(--about-background-color);
+
+  @media screen and (min-width: 768px) {
+    width: 148px;
+  }
+`;
+
+export const AboutImg = styled.li`
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+
+    width: 342px;
+    height: 100%;
   }
 `;
 
@@ -60,7 +80,7 @@ export const Wrapper = styled.div`
 `;
 
 export const GreenLine = styled.div`
- display: none;
+  display: none;
 
   margin-left: 82px;
   margin-right: 11px;
@@ -95,7 +115,6 @@ export const AboutGrid = styled.div`
 
   border-bottom: 1px solid var(--burger-hover-background-color);
 `;
-export const AboutImg = styled.li``;
 
 export const Values = styled.p`
   font-family: var(--title-font);
