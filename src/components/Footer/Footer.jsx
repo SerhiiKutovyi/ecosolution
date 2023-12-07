@@ -1,5 +1,6 @@
 import logo from '../../images/logo.png';
 
+import icon from '../../images/icon.svg';
 import facebook from '../../images/facebook.svg';
 import instagram from '../../images/instagram.svg';
 
@@ -21,27 +22,8 @@ const Footer = () => {
         <img src={logo} alt="Logo"></img>
         <Link to="main" smooth={true} duration={1000}>
           <Arrow>
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M3.95312 6.38L7.99979 2.33334L12.0465 6.38"
-                stroke="#f2f7f6"
-                strokeMiterlimit="10"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M8 13.6666L8 2.44663"
-                stroke="#f2f7f6"
-                strokeMiterlimit="10"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
+            <svg>
+              <use href={icon + '#icon-arrow'}></use>
             </svg>
           </Arrow>
         </Link>

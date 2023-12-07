@@ -21,6 +21,14 @@ export const Container = styled.div`
     font-size: 14px;
     line-height: calc(19 / 14);
   }
+
+  @media screen and (min-width: 768px) {
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; */
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -73,5 +81,6 @@ export const Arrow = styled.div`
   svg {
     width: 16px;
     height: 16px;
+    /* stroke: var(--modal-background); */
   }
 `;

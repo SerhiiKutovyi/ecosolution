@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import icon from '../../images/symbol-defs.svg';
+import icon from '../../images/icon.svg';
 
 import {
   Wrapper,
