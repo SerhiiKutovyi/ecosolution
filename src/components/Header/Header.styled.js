@@ -18,7 +18,7 @@ export const Container = styled.div`
 
   height: 112px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: ${props => (props.headerColor ? '#FFFFFF' : '#f3f5fa')};
 
   @media screen and (min-width: 768px) {
     margin-bottom: 164px;
