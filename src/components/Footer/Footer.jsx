@@ -23,7 +23,7 @@ const Footer = () => {
         <Link to="main" smooth={true} duration={1000}>
           <Arrow>
             <svg>
-              <use href={icon + '#icon-arrow'}></use>
+              <use href={icon + '#icon-arrow-right'}></use>
             </svg>
           </Arrow>
         </Link>

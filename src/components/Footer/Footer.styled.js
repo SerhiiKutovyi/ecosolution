@@ -81,6 +81,8 @@ export const Arrow = styled.div`
   svg {
     width: 16px;
     height: 16px;
-    /* stroke: var(--modal-background); */
+
+    fill: var(--burger-hover-background-color);
+    stroke: var(--modal-background);
   }
 `;
