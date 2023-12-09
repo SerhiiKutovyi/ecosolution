@@ -7,20 +7,22 @@ import Header from '../Header/Header';
 import Main from '../Main/Main';
 import Faq from '../Faq/Faq';
 
-import {Container} from './App.styled';
+import { Container } from './App.styled';
 
 const App = () => {
   return (
-    <Container>
-      <Header />
-      <Main />
-      <About />
-      <Electricity />
-      <Cases />
-      <Faq />
-      <ContactUs />
-      <Footer />
-    </Container>
+    <>
+      <Container>
+        <Header />
+        <Main />
+        <About />
+        <Electricity />
+        <Cases />
+        <Faq />
+        <ContactUs />
+        <Footer />
+      </Container>
+    </>
   );
 };
 

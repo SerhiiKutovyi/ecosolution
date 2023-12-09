@@ -67,6 +67,7 @@ export const Arrow = styled.div`
 
   border-radius: 50%;
 
+  color: var(--burger-hover-background-color);
   background-color: var(--burger-hover-background-color);
   transition: var(--animation);
 
@@ -74,6 +75,7 @@ export const Arrow = styled.div`
 
   &:hover,
   :focus {
+    color: var(--title-text-main-color);
     background-color: var(--title-text-main-color);
     transition: var(--animation);
   }
@@ -82,7 +84,12 @@ export const Arrow = styled.div`
     width: 16px;
     height: 16px;
 
-    fill: var(--burger-hover-background-color);
+    fill: currentColor;
     stroke: var(--modal-background);
+  }
+
+  svg:hover,
+  :focus {
+    stroke: var(--burger-hover-background-color);
   }
 `;
