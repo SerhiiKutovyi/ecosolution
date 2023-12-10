@@ -27,6 +27,7 @@ export const Deve = styled.p`
 `;
 
 export const Container = styled.div`
+  padding-top: 110px;
   margin-bottom: 36px;
 
   h1 {
@@ -71,6 +72,14 @@ export const Container = styled.div`
       margin-right: 0;
       margin-bottom: 40px;
     }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 128px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 164px;
   }
 `;
 

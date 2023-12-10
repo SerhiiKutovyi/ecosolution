@@ -12,8 +12,8 @@ import { Container } from './App.styled';
 const App = () => {
   return (
     <>
-      <Container>
         <Header />
+      <Container>
         <Main />
         <About />
         <Electricity />
