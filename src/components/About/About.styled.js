@@ -53,13 +53,13 @@ export const Container = styled.div`
       grid-column-gap: 24px;
     }
   }
+`;
 
-  p {
-    font-family: var(--main-font);
-    font-style: normal;
-    font-size: 14px;
-    line-height: calc(16.8 / 14);
-  }
+export const Text = styled.p`
+  font-family: var(--main-font);
+  font-style: normal;
+  font-size: 14px;
+  line-height: calc(16.8 / 14);
 `;
 
 export const AboutCards = styled.div`
@@ -75,14 +75,15 @@ export const AboutCards = styled.div`
 
   @media screen and (min-width: 768px) {
     width: 159px;
-  
   }
 `;
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  padding-bottom: 36px;
 
   @media screen and (min-width: 768px) {
+    padding-bottom: 100px;
     flex-direction: row;
   }
 `;
@@ -100,19 +101,17 @@ export const AboutImg = styled.div`
 export const GreenLine = styled.div`
   display: none;
 
-  margin-left: 82px;
   margin-right: 11px;
   height: 110px;
   border-left: 1px solid var(--burger-hover-background-color);
 
   @media screen and (min-width: 768px) {
+    justify-content: center;
     display: block;
   }
 `;
 
 export const AboutText = styled.p`
-  margin-bottom: 36px;
-
   font-family: var(--main-font);
   font-style: normal;
   font-size: 16px;
@@ -120,6 +119,7 @@ export const AboutText = styled.p`
 
   @media screen and (min-width: 768px) {
     width: 100%;
+    font-size: 16px;
   }
 `;
 

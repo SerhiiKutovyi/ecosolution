@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
     margin-bottom: 16px;
   }
 `;
-export const Deve = styled.p`
+export const Development = styled.p`
   margin-bottom: 24px;
 
   font-family: var(--main-font);
@@ -20,7 +20,7 @@ export const Deve = styled.p`
   line-height: calc(19.2 / 16);
 
   @media screen and (min-width: 768px) {
-    width: 100%;
+    width: 324px;
 
     margin-bottom: 43px;
   }
@@ -28,7 +28,7 @@ export const Deve = styled.p`
 
 export const Container = styled.div`
   padding-top: 110px;
-  margin-bottom: 36px;
+ padding-bottom: 36px;
 
   h1 {
     margin-bottom: 24px;
@@ -39,8 +39,15 @@ export const Container = styled.div`
     line-height: calc(36 / 36);
 
     @media screen and (min-width: 768px) {
-      font-size: 48px;
-      line-height: calc(48 / 48);
+     
+
+      font-size: 51px;
+      line-height: calc(51 / 51);
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 64px;
+      line-height: calc(64 / 64);
     }
   }
 
@@ -76,11 +83,14 @@ export const Container = styled.div`
 
   @media screen and (min-width: 768px) {
     padding-top: 128px;
+    padding-bottom: 100px;
   }
 
   @media screen and (min-width: 1280px) {
     padding-top: 164px;
   }
+
+
 `;
 
 export const Eco = styled.p`

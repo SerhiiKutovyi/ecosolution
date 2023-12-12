@@ -1,6 +1,6 @@
 import MainBtn from '../Button/MainBtn/Button';
 
-import { Container, Img, Wrapper, Eco, Deve } from './Main.styled';
+import { Container, Img, Wrapper, Eco, Development } from './Main.styled';
 import mask from '../../images/wind-turbine-clean-energy.jpg';
 
 const Main = () => {
@@ -9,11 +9,11 @@ const Main = () => {
       <Wrapper>
         <h1 id="main">RENEWABLE ENERGY FOR ANY TASK</h1>
         <div>
-          <Deve>
+          <Development>
             Development and implementation of renewable non-polluting energy
             sources, generating power generation using energy wind, sun, water,
             biomass
-          </Deve>
+          </Development>
           <MainBtn target="cases" />
         </div>
       </Wrapper>

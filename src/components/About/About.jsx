@@ -14,6 +14,7 @@ import {
   AboutGrid,
   AboutImg,
   AboutCards,
+  Text,
 } from './About.styled';
 
 const About = () => {
@@ -38,7 +39,7 @@ const About = () => {
               <img src={openness} alt="Openness"></img>
               <Values>OPENNESS</Values>
             </AboutGrid>
-            <p>to the world, people, new ideas and projects</p>
+            <Text>to the world, people, new ideas and projects</Text>
           </AboutCards>
 
           <AboutCards>
@@ -46,10 +47,10 @@ const About = () => {
               <img src={responsibility} alt="Responsibility"></img>
               <Values>RESPONSIBILITY</Values>
             </AboutGrid>
-            <p>
+            <Text>
               we are aware that the results of our work have an impact on our
               lives and the lives of future generations
-            </p>
+            </Text>
           </AboutCards>
 
           <AboutImg>
@@ -66,9 +67,9 @@ const About = () => {
               <img src={innovation} alt="Innovation"></img>
               <Values>INNOVATION</Values>
             </AboutGrid>
-            <p>
+            <Text>
               we use the latest technology to implement non-standard solutions
-            </p>
+            </Text>
           </AboutCards>
 
           <AboutCards>
@@ -76,10 +77,10 @@ const About = () => {
               <img src={quality} alt="Quality"></img>
               <Values>QUALITY</Values>
             </AboutGrid>
-            <p>
+            <Text>
               we do not strive to be the first among others, but we want to be
               the best in our business
-            </p>
+            </Text>
           </AboutCards>
         </li>
       </ul>
