@@ -1,10 +1,33 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding-top: 24px;
-  padding-bottom: 24px;
+  position: relative;
+  width: 360px;
 
-  border-top: 1px solid var(--burger-hover-background-color);
+  margin-right: auto;
+  margin-left: auto;
+
+  padding-top: 61px;
+  padding-bottom: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background-color: var(--layout-background-color);
+
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+
+    padding-top: 141px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
 
   a {
     font-family: var(--main-font);
@@ -21,13 +44,18 @@ export const Container = styled.div`
     font-size: 14px;
     line-height: calc(19 / 14);
   }
+`;
+
+export const GreenLine = styled.div`
+  position: absolute;
+  top: 36px;
+  width: 320px;
+  border-bottom: 1px solid var(--burger-hover-background-color);
 
   @media screen and (min-width: 768px) {
-    /* display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px; */
+    top: 100px;
+
+    width: 708px;
   }
 `;
 

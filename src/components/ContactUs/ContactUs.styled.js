@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    
   }
 `;
 

@@ -13,13 +13,18 @@ import {
   Icons,
   Address,
   Email,
+  GreenLine,
 } from './Footer.styled';
 
 const Footer = () => {
   return (
     <Container>
+      <GreenLine />
       <Wrapper>
-        <img src={logo} alt="Logo"></img>
+        <a href="/" alt="Home">
+          <img src={logo} alt="Logo"></img>
+        </a>
+
         <Link to="main" smooth={true} duration={1000}>
           <Arrow>
             <svg>

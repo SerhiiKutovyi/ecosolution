@@ -12,7 +12,7 @@ import { Container } from './App.styled';
 const App = () => {
   return (
     <>
-        <Header />
+      <Header />
       <Container>
         <Main />
         <About />
@@ -20,8 +20,8 @@ const App = () => {
         <Cases />
         <Faq />
         <ContactUs />
-        <Footer />
       </Container>
+      <Footer />
     </>
   );
 };

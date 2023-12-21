@@ -27,7 +27,9 @@ const Header = () => {
   return (
     <StyleSheetManager shouldForwardProp={prop => prop !== 'headerColor'}>
       <Container headerColor={color}>
-        <img src={logo} alt="Logo"></img>
+        <a href="/" alt="Home">
+          <img src={logo} alt="Logo"></img>
+        </a>
         <BurgerMenu />
         <GetInTouch target="contactUs" />
       </Container>
