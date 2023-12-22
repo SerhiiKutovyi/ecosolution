@@ -1,6 +1,5 @@
 import logo from '../../images/logo.png';
 
-import icon from '../../images/icon.svg';
 import facebook from '../../images/facebook.svg';
 import instagram from '../../images/instagram.svg';
 
@@ -8,13 +7,13 @@ import { Link } from 'react-scroll';
 
 import {
   Container,
-  Arrow,
   Wrapper,
   Icons,
   Address,
   Email,
   GreenLine,
 } from './Footer.styled';
+import ButtonArrow from '../Button/ButtonArrow/ButtonArrow';
 
 const Footer = () => {
   return (
@@ -26,11 +25,7 @@ const Footer = () => {
         </a>
 
         <Link to="main" smooth={true} duration={1000}>
-          <Arrow>
-            <svg>
-              <use href={icon + '#icon-arrow-right'}></use>
-            </svg>
-          </Arrow>
+          <ButtonArrow />
         </Link>
       </Wrapper>
 

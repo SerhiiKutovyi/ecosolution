@@ -18,6 +18,7 @@ export const Container = styled.div`
   }
 
   @media screen and (min-width: 768px) {
+    
     width: 768px;
 
     padding-top: 141px;
@@ -85,39 +86,3 @@ export const Email = styled.div`
   text-align: center;
 `;
 
-export const Arrow = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 32px;
-  height: 32px;
-
-  border-radius: 50%;
-
-  color: var(--burger-hover-background-color);
-  background-color: var(--burger-hover-background-color);
-  transition: var(--animation);
-
-  cursor: pointer;
-
-  &:hover,
-  :focus {
-    color: var(--title-text-main-color);
-    background-color: var(--title-text-main-color);
-    transition: var(--animation);
-  }
-
-  svg {
-    width: 16px;
-    height: 16px;
-
-    fill: currentColor;
-    stroke: var(--modal-background);
-  }
-
-  svg:hover,
-  :focus {
-    stroke: var(--burger-hover-background-color);
-  }
-`;
