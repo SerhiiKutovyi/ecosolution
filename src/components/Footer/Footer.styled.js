@@ -30,6 +30,12 @@ export const Container = styled.div`
     width: 1280px;
   }
 
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    
+  }
+
   a {
     font-family: var(--main-font);
     font-style: normal;
@@ -38,7 +44,7 @@ export const Container = styled.div`
   }
 
   p {
-    text-align: center;
+    /* text-align: center; */
 
     font-family: var(--main-font);
     font-style: normal;
@@ -70,19 +76,19 @@ export const Wrapper = styled.div`
 
 export const Icons = styled.li`
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 8px;
 
-  margin-bottom: 24px;
+  /* margin-bottom: 24px; */
 `;
 
 export const Address = styled.div`
-  margin-bottom: 16px;
-  text-align: center;
+  /* margin-bottom: 16px; */
+  /* text-align: center; */
 `;
 
 export const Email = styled.div`
-  margin-bottom: 16px;
-  text-align: center;
+  /* margin-bottom: 16px; */
+  /* text-align: center; */
 `;
 

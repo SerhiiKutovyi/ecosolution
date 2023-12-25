@@ -7,7 +7,7 @@ import { Link } from 'react-scroll';
 
 import {
   Container,
-  Wrapper,
+  // Wrapper,
   Icons,
   Address,
   Email,
@@ -19,17 +19,18 @@ const Footer = () => {
   return (
     <Container>
       <GreenLine />
-      <Wrapper>
-        <a href="/" alt="Home">
-          <img src={logo} alt="Logo"></img>
-        </a>
-
-        <Link to="main" smooth={true} duration={1000}>
-          <ButtonArrow />
-        </Link>
-      </Wrapper>
 
       <ul>
+        <li>
+          <a href="/" alt="Home">
+            <img src={logo} alt="Logo"></img>
+          </a>
+        </li>
+        <li>
+          <Link to="main" smooth={true} duration={1000}>
+            <ButtonArrow />
+          </Link>
+        </li>
         <Icons>
           <a href="https://uk-ua.facebook.com/">
             <img src={facebook} alt="facebook icon" />
