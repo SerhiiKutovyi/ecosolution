@@ -12,6 +12,7 @@ import {
   Address,
   Email,
   GreenLine,
+  Btn,
 } from './Footer.styled';
 import ButtonArrow from '../Button/ButtonArrow/ButtonArrow';
 
@@ -26,11 +27,11 @@ const Footer = () => {
             <img src={logo} alt="Logo"></img>
           </a>
         </li>
-        <li>
+        <Btn>
           <Link to="main" smooth={true} duration={1000}>
             <ButtonArrow />
           </Link>
-        </li>
+        </Btn>
         <Icons>
           <a href="https://uk-ua.facebook.com/">
             <img src={facebook} alt="facebook icon" />

@@ -18,7 +18,6 @@ export const Container = styled.div`
   }
 
   @media screen and (min-width: 768px) {
-    
     width: 768px;
 
     padding-top: 141px;
@@ -32,8 +31,8 @@ export const Container = styled.div`
 
   ul {
     display: grid;
-    grid-template-columns: repeat(3,auto);
-    
+    grid-template-columns: repeat(3, auto);
+    grid-row-gap: 16px;
   }
 
   a {
@@ -51,6 +50,12 @@ export const Container = styled.div`
     font-size: 14px;
     line-height: calc(19 / 14);
   }
+`;
+
+export const Btn = styled.li`
+  grid-row-start: 1;
+  grid-column-start: 3;
+  justify-self: end;
 `;
 
 export const GreenLine = styled.div`
@@ -91,4 +96,3 @@ export const Email = styled.div`
   /* margin-bottom: 16px; */
   /* text-align: center; */
 `;
-
