@@ -20,7 +20,7 @@ export const Container = styled.div`
   @media screen and (min-width: 768px) {
     width: 768px;
 
-    padding-top: 141px;
+    padding-top: 140px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -31,8 +31,9 @@ export const Container = styled.div`
 
   ul {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-row-gap: 16px;
+    grid-template-columns: auto 171px 171px;
+    grid-row-gap: 24px;
+    /* grid-auto-columns: minmax(auto, auto); */
   }
 
   a {
@@ -43,7 +44,7 @@ export const Container = styled.div`
   }
 
   p {
-    /* text-align: center; */
+    justify-self: end;
 
     font-family: var(--main-font);
     font-style: normal;
@@ -52,10 +53,17 @@ export const Container = styled.div`
   }
 `;
 
+export const Logo = styled.li``;
+
+export const Ecosolution = styled.li`
+  display: grid;
+`;
+
 export const Btn = styled.li`
   grid-row-start: 1;
   grid-column-start: 3;
   justify-self: end;
+  align-self: end;
 `;
 
 export const GreenLine = styled.div`
@@ -71,20 +79,11 @@ export const GreenLine = styled.div`
   }
 `;
 
-export const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  margin-bottom: 24px;
-`;
-
 export const Icons = styled.li`
-  display: flex;
-  /* justify-content: center; */
-  gap: 8px;
-
-  /* margin-bottom: 24px; */
+  display: grid;
+  grid-template-columns: 24px 24px;
+  align-self: end;
+  grid-column-gap: 8px;
 `;
 
 export const Address = styled.div`

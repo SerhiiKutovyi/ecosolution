@@ -7,12 +7,13 @@ import { Link } from 'react-scroll';
 
 import {
   Container,
-  // Wrapper,
   Icons,
   Address,
   Email,
   GreenLine,
   Btn,
+  Ecosolution,
+  Logo,
 } from './Footer.styled';
 import ButtonArrow from '../Button/ButtonArrow/ButtonArrow';
 
@@ -22,11 +23,11 @@ const Footer = () => {
       <GreenLine />
 
       <ul>
-        <li>
+        <Logo>
           <a href="/" alt="Home">
             <img src={logo} alt="Logo"></img>
           </a>
-        </li>
+        </Logo>
         <Btn>
           <Link to="main" smooth={true} duration={1000}>
             <ButtonArrow />
@@ -48,9 +49,9 @@ const Footer = () => {
         <Email>
           <a href="mailto:office@ecosolution.com">office@ecosolution.com</a>
         </Email>
-        <li>
+        <Ecosolution>
           <p>ecosolution © 2023</p>
-        </li>
+        </Ecosolution>
       </ul>
     </Container>
   );
