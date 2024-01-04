@@ -14,6 +14,7 @@ import {
   Btn,
   Ecosolution,
   Logo,
+  Wrapper,
 } from './Footer.styled';
 import ButtonArrow from '../Button/ButtonArrow/ButtonArrow';
 
@@ -22,7 +23,7 @@ const Footer = () => {
     <Container>
       <GreenLine />
 
-      <ul>
+      <Wrapper>
         <Logo>
           <a href="/" alt="Home">
             <img src={logo} alt="Logo"></img>
@@ -52,7 +53,7 @@ const Footer = () => {
         <Ecosolution>
           <p>ecosolution © 2023</p>
         </Ecosolution>
-      </ul>
+      </Wrapper>
     </Container>
   );
 };
