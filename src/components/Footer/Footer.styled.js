@@ -25,8 +25,8 @@ export const Container = styled.div`
     padding-right: 30px;
   }
 
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
+  @media screen and (min-width: 1440px) {
+    width: 1440px;
 
     padding-left: 100px;
     padding-right: 100px;
@@ -70,10 +70,10 @@ export const GreenLine = styled.div`
     width: 708px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1440px) {
     top: 100px;
 
-    width: 1080px;
+    width: 1240px;
   }
 `;
 
