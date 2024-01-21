@@ -57,12 +57,20 @@ const BurgerMenu = () => {
                 <p>Contact Us</p>
               </li>
               <IconBox>
-                <a href="https://uk-ua.facebook.com/">
+                <a
+                  href="https://uk-ua.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <SvgFacebook>
                     <use href={icon + '#icon-facebook'}></use>
                   </SvgFacebook>
                 </a>
-                <a href="https://www.instagram.com/">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <SvgInstagram>
                     <use href={icon + '#icon-instagram'}></use>
                   </SvgInstagram>

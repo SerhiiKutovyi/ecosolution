@@ -5,7 +5,7 @@ const ContactUsBtn = ({ target }) => {
   return (
     <>
       <Link to={target} smooth={true} duration={1000}>
-        <Btn>
+        <Btn type='button'>
           <span>Contact Us</span>
           <div></div>
         </Btn>
