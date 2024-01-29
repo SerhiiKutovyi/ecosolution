@@ -19,7 +19,7 @@ import {
 
 const About = () => {
   return (
-    <Container>
+    <Container id="about">
       <Wrapper>
         <h2>MAIN VALUES OF OUR COMPANY</h2>
         <GreenLine></GreenLine>

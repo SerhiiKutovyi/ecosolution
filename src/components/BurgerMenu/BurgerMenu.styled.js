@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
@@ -70,12 +71,7 @@ export const ModalContent = styled.div`
     }
   }
 
-  ul {
-    border-top: 1px solid var(--white-color);
-    padding-top: 24px;
-  }
-
-  p {
+  a {
     margin-bottom: 8px;
 
     font-family: var(--main-font);
@@ -85,6 +81,10 @@ export const ModalContent = styled.div`
 
     color: var(--white-color);
   }
+`;
+
+export const LinkStyle = styled(Link)`
+  cursor: pointer;
 `;
 
 export const IconBox = styled.li`

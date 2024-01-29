@@ -30,7 +30,7 @@ const Footer = () => {
           </a>
         </Logo>
         <Btn>
-          <Link to="main" smooth={true} duration={1000}>
+          <Link to="main" spy={true} smooth={true} offset={-160} duration={1000}>
             <ButtonArrow />
           </Link>
         </Btn>

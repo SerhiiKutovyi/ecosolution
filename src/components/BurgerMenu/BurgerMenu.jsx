@@ -9,6 +9,7 @@ import {
   SvgInstagram,
   SvgFacebook,
   IconBox,
+  LinkStyle,
 } from './BurgerMenu.styled';
 
 const BurgerMenu = () => {
@@ -39,22 +40,62 @@ const BurgerMenu = () => {
       {modal && (
         <Modal>
           <ModalContent>
-            <button onClick={closeModal}>x close</button>
+            <button onClick={closeModal}>X close</button>
             <ul>
               <li>
-                <p>Main</p>
+                <LinkStyle
+                  to="main"
+                  spy={true}
+                  smooth={true}
+                  offset={-160}
+                  duration={1000}
+                >
+                  Main
+                </LinkStyle>
               </li>
               <li>
-                <p>About</p>
+                <LinkStyle
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-160}
+                  duration={1000}
+                >
+                  About
+                </LinkStyle>
               </li>
               <li>
-                <p>Cases</p>
+                <LinkStyle
+                  to="cases"
+                  spy={true}
+                  smooth={true}
+                  offset={-160}
+                  duration={1000}
+                >
+                  Cases
+                </LinkStyle>
               </li>
               <li>
-                <p>FAQ</p>
+                <LinkStyle
+                  to="faq"
+                  spy={true}
+                  smooth={true}
+                  offset={-160}
+                  duration={1000}
+                >
+                  FAQ
+                </LinkStyle>
               </li>
               <li>
-                <p>Contact Us</p>
+                <LinkStyle
+                  to="contactUs"
+                  spy={true}
+                  smooth={true}
+                  offset={-160}
+                  duration={1000}
+                >
+                  Contact Us
+                </LinkStyle>
               </li>
               <IconBox>
                 <a
