@@ -4,6 +4,7 @@ import { Pagination, Navigation } from 'swiper/modules';
 import { SwiperSlide } from 'swiper/react';
 import 'swiper/css/bundle';
 
+
 import bg1 from '../../images/lviv.jpg';
 import bg2 from '../../images/zitomiyr.jpg';
 import bg3 from '../../images/rivne.jpg';
@@ -29,15 +30,12 @@ const Slider = () => {
   }, []);
 
   return (
+    
     <Container
       modules={[Navigation, Pagination]}
       spaceBetween={50}
       slidesPerView={NumberOfSliders}
       pagination={{ type: 'fraction' }}
-      navigation={{
-        prevEl: 'CustomPrevButton',
-        nextEl: 'CustomNextButton',
-      }}
       loop={true}
     >
       <SwiperSlide>

@@ -7,7 +7,10 @@ export const Container = styled(Swiper)`
   @media screen and (min-width: 768px) {
     margin-bottom: 107px;
   }
+
+
 `;
+
 
 export const Prev = styled.div`
   display: block;
