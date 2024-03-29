@@ -1,4 +1,3 @@
-import SwiperNavBtn from '../Button/SwiperNavBtn/SwiperNavBtn';
 import Slider from '../Slider/Slider';
 import { CasesTitle, GreenLine, Wrapper } from './Cases.styled';
 
@@ -9,7 +8,6 @@ const Cases = () => {
         <CasesTitle id="cases">SUCCESSFUL CASES OF OUR COMPANY</CasesTitle>
         <GreenLine></GreenLine>
       </Wrapper>
-      <SwiperNavBtn />
       <Slider />
     </>
   );
