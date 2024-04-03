@@ -1,7 +1,7 @@
+import { Swiper } from 'swiper/react';
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
- 
   display: flex;
 `;
 
@@ -36,4 +36,37 @@ export const GreenLine = styled.div`
 
     border-left: 1px solid var(--burger-hover-background-color);
   }
+`;
+export const Container = styled(Swiper)`
+  margin-bottom: 26px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 107px;
+  }
+
+  .my-swiper .swiper-button-next,
+  .my-swiper .swiper-button-prev,
+  .my-swiper .swiper-pagination {
+    top: unset !important;
+    left: unset !important;
+    bottom: unset !important;
+    width: auto !important;
+    right: unset !important ;
+    position: unset !important;
+  }
+`;
+
+export const BtnContainer = styled.div`
+  /*  
+  top: 200px;
+  left: 0px; */
+`;
+
+export const ButtonSwiper = styled.div`
+  padding: 20px;
+  background-color: white;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;

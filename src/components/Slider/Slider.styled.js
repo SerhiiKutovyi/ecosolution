@@ -1,39 +1,43 @@
-import styled from 'styled-components';
-import { Swiper } from 'swiper/react';
+// import styled from 'styled-components';
+// import { Swiper } from 'swiper/react';
 
-export const Container = styled(Swiper)`
+// export const Container = styled(Swiper)`
   
-  margin-bottom: 26px;
+//   margin-bottom: 26px;
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 107px;
-  }
+//   @media screen and (min-width: 768px) {
+//     margin-bottom: 107px;
+//   }
 
-  .swiper-button-next,
-  .swiper-button-prev,
-  .swiper-pagination {
-    top: unset !important;
-    left: unset !important;
-    bottom: unset !important;
-    width: auto !important;
-    right: unset !important ;
-    position: unset !important;
-  }
-`;
+//   .swiper-button-next,
+//   .swiper-button-prev,
+//   .swiper-pagination {
+//     top: unset !important;
+//     left: unset !important;
+//     bottom: unset !important;
+//     width: auto !important;
+//     right: unset !important ;
+//     position: unset !important;
 
-export const BtnContainer = styled.div`
-  position: absolute;
-  top: 200px;
-  left: 200px;
-`;
+//     color: red;
 
-export const ButtonSwiper = styled.div`
-  padding: 20px;
-  background-color: white;
-  width: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
+   
+//   }
+// `;
+
+// export const BtnContainer = styled.div`
+//   position: absolute;
+//   top: 200px;
+//   left: 0px;
+// `;
+
+// export const ButtonSwiper = styled.div`
+//   padding: 20px;
+//   background-color: white;
+//   width: 200px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// `;
 
 
