@@ -13,17 +13,13 @@ import {
   GreenLine,
   Wrapper,
   Container,
-  ButtonSwiper,
+  // ButtonSwiper,
   // BtnContainer,
 } from './Cases.styled';
 
 const Cases = () => {
   return (
-    <>
-      <Wrapper>
-        <CasesTitle id="cases">SUCCESSFUL CASES OF OUR COMPANY</CasesTitle>
-        <GreenLine></GreenLine>
-      </Wrapper>
+    <div>
       <Container
         modules={[Navigation, Pagination]}
         spaceBetween={50}
@@ -44,6 +40,13 @@ const Cases = () => {
           },
         }}
       >
+        <Wrapper>
+          <CasesTitle id="cases">SUCCESSFUL CASES OF OUR COMPANY</CasesTitle>
+          <GreenLine></GreenLine>
+        </Wrapper>
+        <div className="swiper-button-prev"></div>
+        <div className="swiper-pagination"></div>
+        <div className="swiper-button-next"></div>
         <SwiperSlide>
           <img src={bg1} alt="Lviv" />
         </SwiperSlide>
@@ -60,12 +63,7 @@ const Cases = () => {
           <img src={bg5} alt="Zaporizhia" />
         </SwiperSlide>
       </Container>
-      <ButtonSwiper>
-        <div className="my-swiper swiper-button-prev"></div>
-        <div className="my-swiper swiper-pagination"></div>
-        <div className="my-swiper swiper-button-next"></div>
-      </ButtonSwiper>
-    </>
+    </div>
   );
 };
 export default Cases;

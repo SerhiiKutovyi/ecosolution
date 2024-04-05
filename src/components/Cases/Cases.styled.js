@@ -1,6 +1,36 @@
 import { Swiper } from 'swiper/react';
 import styled from 'styled-components';
 
+export const Container = styled(Swiper)`
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 26px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 107px;
+  }
+
+  .swiper-button-prev {
+    left: 240px;
+    top: 53px;
+    color: aqua;
+  }
+
+  .swiper-button-next {
+    left: 280px;
+    top: 53px;
+    color: aqua;
+  }
+
+  .swiper-pagination {
+    left: 20px;
+    top: 53px;
+    color: red;
+    width: 35px;
+    height: 20px;
+  }
+`;
+
 export const Wrapper = styled.div`
   display: flex;
 `;
@@ -29,44 +59,17 @@ export const GreenLine = styled.div`
 
   @media screen and (min-width: 768px) {
     margin-left: 90px;
-
     display: block;
-
     height: 65px;
-
     border-left: 1px solid var(--burger-hover-background-color);
   }
 `;
-export const Container = styled(Swiper)`
-  margin-bottom: 26px;
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 107px;
-  }
-
-  .my-swiper .swiper-button-next,
-  .my-swiper .swiper-button-prev,
-  .my-swiper .swiper-pagination {
-    top: unset !important;
-    left: unset !important;
-    bottom: unset !important;
-    width: auto !important;
-    right: unset !important ;
-    position: unset !important;
-  }
-`;
-
-export const BtnContainer = styled.div`
-  /*  
-  top: 200px;
-  left: 0px; */
-`;
-
-export const ButtonSwiper = styled.div`
-  padding: 20px;
-  background-color: white;
-  width: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
+// export const ButtonSwiper = styled.div`
+//   padding: 20px;
+//   background-color: white;
+//   width: 200px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// `;
